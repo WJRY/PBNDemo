@@ -1,0 +1,18 @@
+use_frameworks!
+workspace '/Users/changwei/project/PBNDemo/PBNDemo/PBNDemo'
+platform :ios, '10.0'
+source 'https://cdn.cocoapods.org/'
+
+inhibit_all_warnings!
+def shared_pods
+  pod 'AFNetworking', '3.2.1'
+  pod 'SDWebImage', '5.0.6'
+  pod 'SDWebImageWebPCoder', '0.2.3'
+  pod 'Masonry', '1.1.0'
+  pod 'YYModel', '1.0.4'
+end
+
+inhibit_all_warnings!
+target 'PBNDemo' do
+  shared_pods
+end
