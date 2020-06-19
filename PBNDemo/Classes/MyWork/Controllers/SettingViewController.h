@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SettingModel.h"
+#import "SettingCollectionViewCell.h"
+#import "PurchaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

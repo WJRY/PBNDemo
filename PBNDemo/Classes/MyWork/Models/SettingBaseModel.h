@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SettingBaseModel : NSObject
 
+@property (strong, nonatomic) NSString *photoName;
+@property (strong, nonatomic) NSString *str;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

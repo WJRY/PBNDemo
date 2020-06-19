@@ -8,8 +8,10 @@
 
 #import "MyWorkViewController.h"
 
-@interface MyWorkViewController ()
+@interface MyWorkViewController ()<UIScrollViewDelegate, UINavigationControllerDelegate>
 
+@property (strong, nonatomic) MyWorkScrollView *myWorkScrollView;
+//@property (strong, nonatomic) MyWorkScrollViewModels *myWorkScrollViewModels;
 @end
 
 @implementation MyWorkViewController
@@ -17,6 +19,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _myWorkScrollView = [[MyWorkScrollView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:_myWorkScrollView];
+    _myWorkScrollView.delegate = self;
+    self.navigationController.delegate = self;
+}
+
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    //判断要显示的控制器是否是自己
+    BOOL isShowhomePage = [viewController isKindOfClass:[self class]];
+    [self.navigationController setNavigationBarHidden:isShowhomePage animated:YES];
+}
+
+- (void)dealloc{
+    self.navigationController.delegate = nil;
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.myWorkScrollView.settingButton addTarget:self action:@selector(settingTap) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)settingTap{
+    NSLog(@"HEllo");
+    SettingViewController *settingViewController = [[SettingViewController alloc] init];
+    [self.navigationController pushViewController:settingViewController animated:YES];
 }
 
 /*
@@ -28,5 +55,7 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
 
 @end

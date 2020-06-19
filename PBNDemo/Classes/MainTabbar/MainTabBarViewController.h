@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NewsViewController.h"
+#import "MyWorkViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

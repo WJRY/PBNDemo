@@ -12,6 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PurchaseScrollView : UIScrollView
 
+@property (strong, nonatomic) UIButton *btn;
+@property (strong, nonatomic) UIButton *selectedBtn;
+@property (strong, nonatomic) UIButton *scrBtn1;
+@property (strong, nonatomic) UIButton *scrBtn2;
+@property (strong, nonatomic) UIButton *scrBtn3;
+@property (strong, nonatomic) UIButton *purchaseBtn1;
+@property (strong, nonatomic) UIButton *purchaseBtn2;
+@property (strong, nonatomic) UIButton *purchaseBtn3;
 @end
 
 NS_ASSUME_NONNULL_END

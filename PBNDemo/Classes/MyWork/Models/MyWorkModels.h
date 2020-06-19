@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MyWorkModels : NSObject
 
+@property (copy, nonatomic) NSString *loginInStr;
+@property (copy, nonatomic) NSString *loginInLabelstr;
+@property (copy, nonatomic) NSString *settingImageName;
+@property (copy, nonatomic) NSString *progressImageName;
+
 @end
 
 NS_ASSUME_NONNULL_END

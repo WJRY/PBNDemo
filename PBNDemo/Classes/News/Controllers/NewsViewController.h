@@ -7,6 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AFHTTPSessionManager.h>
+#import <YYModel/YYModel.h>
+#import "HTTPNewsResult.h"
+#import "NewsCollectionCellModel.h"
+#import "NewsCollectionViewCell.h"
+#import "NewsCollectionReusableView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
