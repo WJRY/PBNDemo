@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) UIButton *settingButton;
 @property (strong, nonatomic) UIButton *progressButton;
 @property (strong, nonatomic) UILabel *loginInLabel;
+@property (strong, nonatomic) UISegmentedControl *myWorkSegment;
 
 @end
 

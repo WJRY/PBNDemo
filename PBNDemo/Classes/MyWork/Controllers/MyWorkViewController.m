@@ -41,7 +41,6 @@
 }
 
 - (void)settingTap{
-    NSLog(@"HEllo");
     SettingViewController *settingViewController = [[SettingViewController alloc] init];
     [self.navigationController pushViewController:settingViewController animated:YES];
 }

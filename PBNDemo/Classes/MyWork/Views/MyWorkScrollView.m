@@ -33,10 +33,12 @@
     _settingButton = [self settingButton1];
     _loginInLabel = [self loginInLabel1];
     _loginInButton = [self loginInButton1];
+    _myWorkSegment = [self myWorkSegment];
     [self addSubview:self.loginInButton];
     [self addSubview:self.loginInLabel];
     [self addSubview:self.settingButton];
     [self addSubview:self.progressButton];
+    [self addSubview:self.myWorkSegment];
 }
 
 - (UIButton *)loginInButton1{
@@ -74,6 +76,13 @@
     progressImageView.image = [UIImage imageNamed:_myWorkModels.progressImageName];
     [_progressButton addSubview:progressImageView];
     return _progressButton;
+}
+
+- (UISegmentedControl *)myWorkSegment{
+    NSArray *array = [NSArray arrayWithObjects:@"进行中", @"已完成", nil];
+    _myWorkSegment = [[UISegmentedControl alloc] initWithItems:array];
+    _myWorkSegment.frame = CGRectMake(10, self.bounds.size.height / 6.0, self.bounds.size.width / 3.0, 20);
+    return _myWorkSegment;
 }
 
 @end
