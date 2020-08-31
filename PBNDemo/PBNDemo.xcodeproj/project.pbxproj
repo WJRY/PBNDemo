@@ -732,6 +732,7 @@
 			baseConfigurationReference = 6F8F7B02EA0BE9FC58021DBB /* Pods-PBNDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JMMVM23392;
 				INFOPLIST_FILE = PBNDemo/Info.plist;
@@ -741,6 +742,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.coolketang.PBNDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -750,6 +752,7 @@
 			baseConfigurationReference = 64870F0C40E6493D7A1E36DE /* Pods-PBNDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JMMVM23392;
 				INFOPLIST_FILE = PBNDemo/Info.plist;
@@ -759,6 +762,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.coolketang.PBNDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
