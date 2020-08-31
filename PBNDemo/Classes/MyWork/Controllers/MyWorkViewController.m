@@ -37,7 +37,9 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [self.myWorkScrollView.settingButton addTarget:self action:@selector(settingTap) forControlEvents:UIControlEventTouchUpInside];
+    [self.myWorkScrollView.settingButton addTarget:self
+                                            action:@selector(settingTap)
+                                  forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)settingTap{
