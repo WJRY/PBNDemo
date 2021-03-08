@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - FSCalendar (2.8.2)
   - libwebp (1.1.0):
     - libwebp/demux (= 1.1.0)
     - libwebp/mux (= 1.1.0)
@@ -30,32 +31,39 @@ PODS:
   - SDWebImageWebPCoder (0.2.3):
     - libwebp (~> 1.0)
     - SDWebImage/Core (~> 5.0)
+  - SnapKit (5.0.1)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (= 3.2.1)
+  - FSCalendar
   - Masonry (= 1.1.0)
   - SDWebImage (= 5.0.6)
   - SDWebImageWebPCoder (= 0.2.3)
+  - SnapKit
   - YYModel (= 1.0.4)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - FSCalendar
     - libwebp
     - Masonry
     - SDWebImage
     - SDWebImageWebPCoder
+    - SnapKit
     - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
   libwebp: 499adac5f5d12d7e1953f04316757480a396908b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
   SDWebImageWebPCoder: 7568737603c50f6237850afedd7e9e28e5917e6b
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: cac3cb69411ff984d011f8b532d5ec02920e43ba
+PODFILE CHECKSUM: 940e22896b861d649d28b38bf59463825613ad01
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

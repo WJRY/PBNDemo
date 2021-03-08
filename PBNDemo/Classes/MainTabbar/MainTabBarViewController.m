@@ -7,6 +7,7 @@
 //
 
 #import "MainTabBarViewController.h"
+#import <PBNDemo-Swift.h>
 
 @interface MainTabBarViewController (){
     //未选中时的图片
@@ -143,7 +144,7 @@
 - (void)loadViewControllers{
     UIViewController *libraryPage = [[UIViewController alloc] init];
     
-    UIViewController *explorePage = [[UIViewController alloc] init];
+    ExploreViewController *explorePage = [[ExploreViewController alloc] init];
     
     NewsViewController *newsPage = [[NewsViewController alloc] init];
     

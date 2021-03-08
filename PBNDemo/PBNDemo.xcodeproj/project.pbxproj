@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6907B24224FE25060015318D /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907B24124FE25060015318D /* NSDate+DateTools.m */; };
+		6970009825F5FCB300BACF5A /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6970009725F5FCB300BACF5A /* ExploreViewController.swift */; };
+		697000B125F61A0000BACF5A /* FSCalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697000B025F61A0000BACF5A /* FSCalendarCollectionViewCell.swift */; };
 		6978D9712497629B004C01A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6978D9702497629B004C01A4 /* AppDelegate.m */; };
 		6978D9772497629B004C01A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6978D9762497629B004C01A4 /* ViewController.m */; };
 		6978D97A2497629B004C01A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6978D9782497629B004C01A4 /* Main.storyboard */; };
@@ -54,6 +57,11 @@
 
 /* Begin PBXFileReference section */
 		64870F0C40E6493D7A1E36DE /* Pods-PBNDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBNDemo.release.xcconfig"; path = "Target Support Files/Pods-PBNDemo/Pods-PBNDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6907B24024FE25060015318D /* NSDate+DateTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateTools.h"; sourceTree = "<group>"; };
+		6907B24124FE25060015318D /* NSDate+DateTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateTools.m"; sourceTree = "<group>"; };
+		6970009625F5FCB200BACF5A /* PBNDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PBNDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		6970009725F5FCB300BACF5A /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		697000B025F61A0000BACF5A /* FSCalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCalendarCollectionViewCell.swift; sourceTree = "<group>"; };
 		6978D96C2497629B004C01A4 /* PBNDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBNDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6978D96F2497629B004C01A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6978D9702497629B004C01A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -151,6 +159,41 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		6907B23F24FE243A0015318D /* Categary */ = {
+			isa = PBXGroup;
+			children = (
+				6907B24024FE25060015318D /* NSDate+DateTools.h */,
+				6907B24124FE25060015318D /* NSDate+DateTools.m */,
+			);
+			path = Categary;
+			sourceTree = "<group>";
+		};
+		6970009525F5FC4E00BACF5A /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				697000AF25F619B300BACF5A /* Controllers */,
+				697000AE25F6199C00BACF5A /* Views */,
+				6970009625F5FCB200BACF5A /* PBNDemo-Bridging-Header.h */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		697000AE25F6199C00BACF5A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				697000B025F61A0000BACF5A /* FSCalendarCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		697000AF25F619B300BACF5A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6970009725F5FCB300BACF5A /* ExploreViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		6978D9632497629B004C01A4 = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +271,8 @@
 		6978D9A724977FDE004C01A4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6970009525F5FC4E00BACF5A /* Explore */,
+				6907B23F24FE243A0015318D /* Categary */,
 				6978D9CC249A25FF004C01A4 /* MyWork */,
 				6978D9B1249791F3004C01A4 /* News */,
 				6978D9AD249780E4004C01A4 /* BaseNavigation */,
@@ -438,6 +483,7 @@
 				TargetAttributes = {
 					6978D96B2497629B004C01A4 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1240;
 					};
 					6978D9862497629C004C01A4 = {
 						CreatedOnToolsVersion = 11.5;
@@ -554,6 +600,7 @@
 				6978D9CB2498C860004C01A4 /* NewsCollectionReusableView.m in Sources */,
 				6978D9AC249780AA004C01A4 /* MainTabBarViewController.m in Sources */,
 				6978D9EC249B65A3004C01A4 /* SettingCollectionViewCell.m in Sources */,
+				697000B125F61A0000BACF5A /* FSCalendarCollectionViewCell.swift in Sources */,
 				6978D9E6249B63E0004C01A4 /* SettingModel.m in Sources */,
 				6978D9712497629B004C01A4 /* AppDelegate.m in Sources */,
 				6978D9C82497A09E004C01A4 /* NewsViewController.m in Sources */,
@@ -562,6 +609,8 @@
 				6978D9822497629C004C01A4 /* main.m in Sources */,
 				6978D9BF249795CF004C01A4 /* NewsCollectionViewCell.m in Sources */,
 				6978D9D9249B1504004C01A4 /* MyWorkModels.m in Sources */,
+				6907B24224FE25060015318D /* NSDate+DateTools.m in Sources */,
+				6970009825F5FCB300BACF5A /* ExploreViewController.swift in Sources */,
 				6978D9E3249B5127004C01A4 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -732,8 +781,10 @@
 			baseConfigurationReference = 6F8F7B02EA0BE9FC58021DBB /* Pods-PBNDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JMMVM23392;
 				INFOPLIST_FILE = PBNDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -743,6 +794,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.coolketang.PBNDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/Explore/PBNDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -752,8 +806,10 @@
 			baseConfigurationReference = 64870F0C40E6493D7A1E36DE /* Pods-PBNDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JMMVM23392;
 				INFOPLIST_FILE = PBNDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -763,6 +819,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.coolketang.PBNDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/Explore/PBNDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -770,6 +828,7 @@
 		6978D99F2497629C004C01A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JMMVM23392;
@@ -790,6 +849,7 @@
 		6978D9A02497629C004C01A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JMMVM23392;
@@ -810,6 +870,7 @@
 		6978D9A22497629C004C01A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JMMVM23392;
 				INFOPLIST_FILE = PBNDemoUITests/Info.plist;
@@ -828,6 +889,7 @@
 		6978D9A32497629C004C01A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JMMVM23392;
 				INFOPLIST_FILE = PBNDemoUITests/Info.plist;

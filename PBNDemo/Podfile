@@ -10,6 +10,8 @@ def shared_pods
   pod 'SDWebImageWebPCoder', '0.2.3'
   pod 'Masonry', '1.1.0'
   pod 'YYModel', '1.0.4'
+  pod 'FSCalendar'
+  pod 'SnapKit'
 end
 
 inhibit_all_warnings!
